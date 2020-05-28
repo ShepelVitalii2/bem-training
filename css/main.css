@@ -1,8 +1,26 @@
 .hero{
-    background: var(--hero-bg-decoration);
-    text-align: center;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to right, 
+    rgba(47, 48, 58, 0.8), 
+    rgba(47, 48, 58, 0.8)),
+    url('../img/hero.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-position: contain;
+   background-color: blanchedalmond;
 
-    padding: 200px 477px;
+     
+}
+
+.hero__logo{
+    width: 646px;
+    margin: 0px 477px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px ;
 }
 
 .hero__title{
@@ -23,7 +41,7 @@
 
     display: inline-block;
 
-    padding: 8px 30px;
+    padding: 10px 32px;
     border-radius: 4px;
     min-width: 200px;
     font-weight: 900;
@@ -33,7 +51,6 @@
 }
 
 .advantages {
-    background-color: var(--main-bg-decoration);
     letter-spacing: 0.03em;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -61,6 +78,34 @@
     width: calc((100% - 90px) / 4);
 }
 
+.advantage__item::before{
+    display: inline-block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    
+    background-color: var(--team-bg-decoration);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.advantage--icon-locator::before{
+    background-image: url(../img/locator.svg);
+}
+
+.advantage--icon-clock::before{
+    background-image: url(../img/clock.svg);
+}
+
+.advantage--icon-computer::before{
+    background-image: url(../img/computer.svg);
+}
+
+.advantage--icon-astronaut::before{
+    background-image: url(../img/astronaut.svg);
+}
+
 .advantage__item:not(:last-child){
     margin-right: 30px;
 }
@@ -81,20 +126,19 @@
 .occupation{
     padding-top: 94px;
     padding-bottom: 94px;
-    background: var(--main-bg-decoration);
 }
 
 .occupation__list{
     display: flex;
 }
 
-.occupation__item:not(:last-child)  {
-    
-    margin-right: 30px;
+.occupation__item{
+    overflow: hidden;
+    border-radius: 4px;
 }
 
-.occupation .header{
-    background: var(--main-bg-decoration);
+.occupation__item:not(:last-child)  {
+    margin-right: 30px;
 }
 
 .occupation__text{

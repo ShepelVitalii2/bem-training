@@ -29,14 +29,12 @@
             </nav>
             <ul class="page-header-contacts">
                 <li class="page-header__contacts-item">
-                    <a href="mailto:info@devstudio.com" class="page-header__contacts-link">
-                        <img src="./img/vector(envelope).svg" alt="конверт">
-                        info@devstudio.com
+                    <a href="mailto:info@devstudio.com" class="page-header__contacts-link page-header__contacts-link--envelope">
+                            info@devstudio.com
                     </a>
                 </li>
                 <li class="page-header__contacts-item">
-                    <a href="tel:+380961111111" class="page-header__contacts-link">
-                        <img src="./img/vector(phone).svg" alt="телефон">
+                    <a href="tel:+380961111111" class="page-header__contacts-link page-header__contacts-link--phone">
                         +38 096 111 11 11
                     </a>
                 </li>
@@ -47,11 +45,14 @@
     <main>
         <!--hero-->
         <section class="hero">
-            <h1 class="hero__title">эффективные решения для вашего бизнеса</h1>
-            
-            <a href="" class="hero__button">
-                Заказать услугу
-            </a> 
+            <div class="hero__logo">
+                <h1 class="hero__title">эффективные решения для вашего бизнеса</h1>
+                
+                <a href="" class="hero__button">
+                    Заказать услугу
+                </a>
+            </div>
+            <!-- <img src="./img/hero.jpg" alt="герой заставка">  -->
         </section>
 
                 <!--advantages-->
@@ -59,37 +60,37 @@
 
                     <h2 class="advantage__hidden-header header">Преимущества</h2>
                     <ul class="advantage-list border-box">
-                        <li class="advantage__item">
-                            <a href="">
-                                <img src="./img/vector(locator).svg" alt="локатор">
-                            </a>
+                        <li class="advantage__item advantage--icon-locator">
+                            <!-- <a href="">
+                                <img src="./img/locator.svg" alt="локатор">
+                            </a> -->
                             <h3 class="advantages__header">Внимание к деталям</h3>
                             <p class="advantages__text">
                                 Идейные соображения, а также начало повседневной работы по формированию позиции.
                             </p>
                         </li>
-                        <li class="advantage__item">
-                            <a href="">
-                                <img src="./img/vector(clock).svg" alt="часы">
-                            </a>
+                        <li class="advantage__item advantage--icon-clock">
+                            <!-- <a href="">
+                                <img src="./img/clock.svg" alt="часы">
+                            </a> -->
                             <h3 class="advantages__header">Пунктуальность</h3>
                             <p class="advantages__text">
                                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                             </p>
                         </li>
-                        <li class="advantage__item">
-                            <a href="">
-                                <img src="./img/vector(computer).svg" alt="компьютер">
-                            </a>
+                        <li class="advantage__item advantage--icon-computer">
+                            <!-- <a href="">
+                                <img src="./img/computer.svg" alt="компьютер">
+                            </a> -->
                             <h3 class="advantages__header">Планирование</h3>
                             <p class="advantages__text">
                                 Равным образом консультация с широким активом в значительной степени обуславливает.
                             </p>
                         </li>
-                        <li class="advantage__item">
-                            <a href="">
-                                <img src="./img/vector(astronaut).svg" alt="астронавт">
-                            </a>
+                        <li class="advantage__item advantage--icon-astronaut">
+                            <!-- <a href="">
+                                <img src="./img/astronaut.svg" alt="астронавт">
+                            </a> -->
                             <h3 class="advantages__header">Современные технологии</h3>
                             <p class="advantages__text">
                                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -101,7 +102,7 @@
             <!--what we do-->
             <section class="occupation">
                 <div class="border-box">
-                    <h2 class="header">Чем мы занимаемся</h2>
+                    <h2 class="occupation-header header">Чем мы занимаемся</h2>
 
                     <ul class="occupation__list">
                         <li class="occupation__item">
@@ -314,25 +315,33 @@
             <div class="appeal-container">
                 <b class="page-footer__appeal">присоединяйтесь</b>
                 
-                <ul class="social-links social-list">
-                    <li>
-                        <a href="" class="page-footer__social-links" aria-label="ссылка на инстаграм">Инс</a>
+                <ul class="social-list">
+                    <li class="social__item">
+                        <a href="" aria-label="ссылка на инстаграм " class="social-list__item social-icon__instagram">
+                            
+                        </a>
                     </li>
-                    <li>
-                        <a href="" class="page-footer__social-links" aria-label="ссылка на твитер">Тви</a>
+                    <li class="social__item">
+                        <a href="" aria-label="ссылка на твитер " class="social-list__item social-icon__twiter">
+                        
+                        </a>
                     </li>
-                    <li>
-                        <a href="" class="page-footer__social-links" aria-label="ссылка на фейсбук">ФБ</a>
+                    <li class="social__item">
+                        <a href="" aria-label="ссылка на фейсбук" class="social-list__item social-icon__facebook">
+                            
+                        </a>
                     </li>
-                    <li>
-                        <a href="" class="page-footer__social-links" aria-label="ссылка на ЛинкдИн">Лнкд</a>
+                    <li class="social__item">
+                        <a href="" aria-label="ссылка на линекдИн" class="social-list__item social-icon__linkedin">
+                           
+                        </a>
                     </li>
                 </ul>
             </div>
 
             <b class="page-footer__appeal">Подпишитесь на рассылку</b>
 
-            <a href="" class="footer-button button">
+            <a href="" class="footer-button button footer-button--icon-plane">
                 Подписаться
             </a>
             

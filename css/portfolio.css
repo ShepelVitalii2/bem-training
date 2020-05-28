@@ -88,12 +88,6 @@ border-bottom-right-radius: 5px;
 padding: 20px 21px;
 }
 
-
-
-
-
-
-
 .project-button :hover,
 .project-button :focus{
     color:var(--accent-color);

@@ -138,7 +138,29 @@ img {
 }
 
 .page-header__contacts-link{
+    display: inline-flex;
+    align-items: center;
+
     color: var(--secondary-text-color);
+}
+
+.page-header__contacts-link--envelope::before{
+    content: "";
+    min-width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-image: url(../img/envelope.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.page-header__contacts-link--phone::before{
+    content: "";
+    min-width: 10px;
+    height: 15px;
+    margin-right: 10px;
+    background-image: url(../img/phone.svg);
+    background-size: contain;
 }
 
 /* FOOTER */
@@ -209,14 +231,54 @@ img {
 
 /* СОКИАБЛЭ тэхт энд пикчерс */
 
-.social-links .page-footer__social-links:hover,
+/* .social-links .page-footer__social-links:hover,
 .social-links .page-footer__social-links:focus{
     color: var(--accent-color);
-}
+} */
 
 .social-list{
     display: flex;
-    justify-content: center;
+}
+
+.social__item:not(:last-child){
+    margin-right: 10px;
+}
+
+.social-icon__instagram{
+    
+    background-image: url(../img/linkInstagram.svg);
+    
+}
+
+.social-icon__twiter{
+    background-image: url(../img/linkTwiter.svg);
+}
+
+.social-icon__facebook{
+    background-image: url(../img/linkFacebook.svg);
+}
+
+.social-icon__linkedin{
+    background-image: url(../img/linkLinked.svg);
+}
+
+
+
+.social-list__item{
+    display: block;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    size: 20px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+
+    
 }
 
 .social-list .social-pics{
@@ -282,13 +344,23 @@ img {
 }
 
 .footer-button{
-    display: inline-block;
+    display: inline-flex;
 
     padding: 8px 43px;
     border: 2px solid var(--team-bg-decoration);
     border-radius: 4px;
     vertical-align: middle;
     min-width: 200px;
+}
+
+.footer-button--icon-plane::after{
+    content: "";
+    min-width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../img/iconSend.svg);
+    background-color: #2196F3;
+    background-size: contain;
 }
 
 .button-secondary{
@@ -324,7 +396,7 @@ img {
 /* Разметка */
 
 .border-box{
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
